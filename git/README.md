@@ -16,7 +16,7 @@
 
 #### 커밋
 
-##### working Directory
+##### Working Directory
 
 - 내가 작업하고 있는 실제 디렉토리
 
@@ -70,9 +70,37 @@ git push -u origin (A) - (A)에 있는 모든 커밋들은 origin깃허브에 �
 
 (A) - ex) master
 
-git clong{} - 레포지토리에 있는걸 로컬로 복사 
+git clone{} - 레포지토리에 있는걸 로컬로 복사 
 
-git push - clong 사용했을때 가능 
+git push - clong 사용했을때 가능
+
+git pull origin master - 최근 커밋을 다운 받음
+
+git restore --staged (A) - (A)를 add한걸 취소함
+
+git restore (A) - WD에 있는 변경사항을 취소시킴
+
+git reset --hard(A) - (A)의 커밋으로 돌아감
+
+## .gitignore
+
+**원하지 않은 특정 파일을 제외시킬 수 있다**
+
+- touch .gitignore - 이그노어 생성
+- (파일이름) # 특정 파일 제외
+- (폴더이름)/ # 특정 폴더 제외
+- *.(확장자) # 특정 확장자 제외
+- !asd.png # asd.png를 제외한 모든 png 제외
+
+## Branch
+
+- git branch (branch name) - 브랜치 생성
+- git checkout (branch name) - 브랜치 이동
+- git checkout -b (branch name) - 브랜치 생성 후 이동
+- git branch - 브랜치 목록 보기
+- git branch -d (branch name) - 브랜치 삭제
+
+- git log --graph --oneline - 브런치 기록들을 그림으로 출력
 
 ## git hub
 
